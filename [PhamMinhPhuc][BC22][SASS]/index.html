@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PhamMinhPhuc,SASS]</title>
+
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="libs/slickslider/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slickslider/slick/slick-theme.css" />
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- gg font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--fancybox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--  header -->
+    <!-- about us -->
+    <section class="About">
+        <div class="about_title">
+            <h1>about us</h1>
+            <h2>The language teaching experts</h2>
+        </div>
+        <div class="about_img">
+            <img src="./images/hero_team.png">
+        </div>
+    </section>
+
+
+
+    <!-- teacher -->
+    <!-- BEGIN TABLE SẢN PHẨM -->
+    <!-- <table class="table table-bordered">
+        <thead>
+            <th>Hinhanh</th>
+            <th>Ngonngu</th>
+            <th>TenGV</th>
+            <th>Mota</th>
+        </thead>
+        <tbody id="tblDanhSachSP"></tbody>
+    </table> -->
+    <!-- END TABLE SẢN PHẨM -->
+    <section class="teacher container section">
+        <div class="teacher__content">
+            <h1 id="products__loading" style="display:none">loading...</h1>
+            <div id="Idteacher" class="row"></div>
+    </section>
+    <!-- <section class="Teacher">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm ">
+                            <div class="Teacher__img">
+                                <img src="./images/teacher_1.jpg">
+                            </div>
+                            <div class="Teacher_font">
+                                <h1>ITALIAN</h1>
+                                <h2>July Roberts</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <tbody id="tblDanhSachSP"></tbody> -->
+    -->
+    <!-- <section class="Teacher">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_1.jpg">
+                    </div>
+                    <div class="Teacher_font">
+                        <h1>ITALIAN</h1>
+                        <h2>July Roberts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_2.jpg">
+                    </div>
+                    <div class="Teacher_font">
+                        <h1>FRENCH</h1>
+                        <h2>Jon Stone</h2>
+                        <p>Nanotechnology immersion along the information.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_3.jpg">
+                    </div>
+                    <div class="Teacher_font">
+                        <h1>JAPANESE</h1>
+                        <h2>Emma Stone</h2>
+                        <p>Bring to the table win-win survival strategies to ensure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_4.jpg">
+                    </div>
+                    <div class="Teacher_font">
+                        <h1>CHINESE</h1>
+                        <h2>Mark Lee</h2>
+                        <p>Proactive domination. At the end of the day, going forward.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_5.jpg">
+                    </div>
+                    <div class="Teacher_font">
+                        <h1>RUSSIAN</h1>
+                        <h2>John Doe</h2>
+                        <p>A new normal that has evolved from generation X.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_6.jpg">
+                    </div>
+
+                    <div class="Teacher_font">
+                        <h1>SWEDEN</h1>
+                        <h2>Jane Smith</h2>
+                        <p>Heading towards a streamlined cloud solution.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_7.jpg">
+                    </div>
+
+                    <div class="Teacher_font">
+                        <h1>SPANISH</h1>
+                        <h2>Hanna Alverez</h2>
+                        <p>Content in real-time will have multiple touchpoints.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="Teacher__img">
+                        <img src="./images/teacher_8.jpg">
+                    </div>
+
+                    <div class="Teacher_font">
+                        <h1>ITALIAN</h1>
+                        <h2>July Roberts</h2>
+                        <p>Capitalize on low hanging fruit to identify a ballpark.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- find your course -->
+    <section class="find">
+        <div class="find_header">
+            <div class="find_img">
+                <img src="./images/conatct_inner.png">
+            </div>
+            <div class="find_font">
+                <div class="modal-body find_table">
+                    <h1>Find Your Course</h1>
+                    <form role="form">
+                        <div class="find_flex">
+                            <div class="form-group find_text ">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control input-sm find_input" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group find_text">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa-solid fa-user-graduate"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control input-sm find_input" placeholder="E-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-comment-dots"></i></span>
+                                </div>
+                                <select class="form-control find_input" id="chucvu">
+                                        <option>English</option>
+                                        <option>French</option>
+                                        <option>Spanish</option>
+                                        <option>German</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user find_input"></i></span>
+                                </div>
+                                <textarea class="form-control input-sm" style="height: 100px;" placeholder="Message"></textarea>
+                                <!-- <input type="text" class="form-control input-sm" style="height: 200px;" placeholder="Message"> -->
+
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-primary find_button">SEND</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="container contact__header">
+            <div class="row">
+                <div class="col-sm contact__layout">
+                    <h1>Contact us</h1>
+                    <i class="fa-solid fa-location-dot"></i> <a>Franklin St, Greenpoint Ave</a><br/>
+                    <i class="fa-solid fa-phone-flip"></i> <a>+2342 5446 67 </a><br/>
+                    <i class="fa-solid fa-clock"></i> <a>Monday - Friday: 8 AM - 5 PM </a><br/>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+                <div class="col-sm contact__layout ">
+                    <h1>Quick Links</h1>
+                    <a>Home</a>
+                    <hr/>
+                    <a>Courses </a>
+                    <hr/>
+                    <a>Schedule </a>
+                    <hr/>
+                    <a>Blog </a>
+                    <hr/>
+
+
+                </div>
+                <div class="col-sm contact__layout ">
+                    <h1>About</h1>
+                    <a>About Us</a>
+                    <hr/>
+                    <a>Events </a>
+                    <hr/>
+                    <a>Get Quote </a>
+                    <hr/>
+                    <a>Contact </a>
+                    <hr/>
+                </div>
+                <div class="col-sm contact__layout">
+                    <h1>Newsletter</h1>
+                    <button class="btn btn-primary contact_btn1 ">Your email</button> <br/>
+                    <button class="btn btn-primary contact_btn2">SUBCRIBE</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- nhung js -->
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="libs/slickslider/slick/slick.min.js "></script>
+    <script type="text/javascript" src="./product/product.js"></script>
+    <script type="text/javascript" src="./service/service.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+
+</html>
