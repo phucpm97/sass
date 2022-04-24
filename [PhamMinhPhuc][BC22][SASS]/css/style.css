@@ -27,14 +27,13 @@
   font-weight: 700;
 }
 
-.teacher {
-  background-color: red;
-}
-
 .teacher .teacher__content .teacher_slider {
-  width: 100px;
+  width: 23%;
+  margin: 1%;
   background-color: wheat;
-  margin: 5px;
+  border-radius: 5px;
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .teacher .teacher__content .teacher_slider .teacher_img {
@@ -74,6 +73,10 @@
   font-size: 14px;
   color: #191919;
   font-size: 400;
+}
+
+.teacher .teacher__content .teacher_slider:hover {
+  box-shadow: 0px 0px 15px 2px #645539;
 }
 
 .find {

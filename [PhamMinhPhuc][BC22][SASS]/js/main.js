@@ -50,7 +50,7 @@ function renderHTML(data) {
     for (var i = 0; i < data.length; i++) {
         var product = data[i];
         content += `
-        <div class="col-12 col-md-6 col-lg-3 teacher_slider">
+        <div class="teacher_slider">
             <div class="card teacher_img">
                 <img src="./images/${product.Hinhanh}" class="card-img-top " alt="...">
             </div>
@@ -97,104 +97,104 @@ function renderHTML(data) {
     </div> */
 }
 
-{
-    /* /* <button class="btn btn-info" data-toggle="modal" data-target="#myModal" onclick="sua(${product.id})">Sửa</button>
-    <button class="btn btn-danger" onclick="xoa(${product.id})">Xoá</button> */
-    // function xoa(id) { */}
-    //     servies
-    //         .deleteProduct(id)
-    //         .then(function(result) {
-    //             getListProduct();
-    //             console.log(result);
-    //         })
-    //         .catch(function(error) {
-    //             console.log(error);
-    //         })
-    // }
 
-    // function sua(id) {
-    //     console.log(id);
-    //     // sửa lại tiêu để modal
-    //     document.getElementsByClassName("modal-title")[0].innerHTML = "Sửa sản phẩm";
-    //     // add vô nút button cập nhập dưới footer của modal
-    //     var footer = `<button class="btn btn-warning" onclick="Capnhat(${id})">Update</button>`;
-    //     document.getElementsByClassName("modal-footer")[0].innerHTML = footer;
+/* /* <button class="btn btn-info" data-toggle="modal" data-target="#myModal" onclick="sua(${product.id})">Sửa</button>
+<button class="btn btn-danger" onclick="xoa(${product.id})">Xoá</button> */
+// function xoa(id) { */}
+//     servies
+//         .deleteProduct(id)
+//         .then(function(result) {
+//             getListProduct();
+//             console.log(result);
+//         })
+//         .catch(function(error) {
+//             console.log(error);
+//         })
+// }
 
-    //     // gọi tới phương thức servives để lấy product từ server
-    //     servies
-    //         .getProductById(id)
-    //         .then(function(result) {
-    //             // getListProduct();
-    //             console.log(result.data);
-    //             // dom tới các thẻ input show value ra
-    //             var product = result.data;
-    //             getEle("TenSP").value = product.tenSP;
-    //             getEle("GiaSP").value = product.gia;
-    //             getEle("HinhSP").value = product.hinhAnh;
-    //             getEle("MoTa").value = product.moTa;
-    //         })
-    //         .catch(function(error) {
-    //             console.log(error);
-    //         })
-    // }
+// function sua(id) {
+//     console.log(id);
+//     // sửa lại tiêu để modal
+//     document.getElementsByClassName("modal-title")[0].innerHTML = "Sửa sản phẩm";
+//     // add vô nút button cập nhập dưới footer của modal
+//     var footer = `<button class="btn btn-warning" onclick="Capnhat(${id})">Update</button>`;
+//     document.getElementsByClassName("modal-footer")[0].innerHTML = footer;
 
-    // function Capnhat(id) {
-    //     console.log(id);
-    //     // dom toi cac the input lay value
-    //     var tenSP = getEle("TenSP").value;
-    //     var giaSP = getEle("GiaSP").value;
-    //     var hinhAnh = getEle("HinhSP").value;
-    //     var moTa = getEle("MoTa").value;
+//     // gọi tới phương thức servives để lấy product từ server
+//     servies
+//         .getProductById(id)
+//         .then(function(result) {
+//             // getListProduct();
+//             console.log(result.data);
+//             // dom tới các thẻ input show value ra
+//             var product = result.data;
+//             getEle("TenSP").value = product.tenSP;
+//             getEle("GiaSP").value = product.gia;
+//             getEle("HinhSP").value = product.hinhAnh;
+//             getEle("MoTa").value = product.moTa;
+//         })
+//         .catch(function(error) {
+//             console.log(error);
+//         })
+// }
+
+// function Capnhat(id) {
+//     console.log(id);
+//     // dom toi cac the input lay value
+//     var tenSP = getEle("TenSP").value;
+//     var giaSP = getEle("GiaSP").value;
+//     var hinhAnh = getEle("HinhSP").value;
+//     var moTa = getEle("MoTa").value;
 
 
-    //     // tao ra doi tuong product
-    //     var product = new Product(id, tenSP, giaSP, hinhAnh, moTa);
-    //     console.log(product);
-    //     //gui toi phuowng thuc services de gui product len server
-    //     servies.UpdateProductById(product)
-    //         .then(function() {
-    //             // console.log(result.data);
-    //             getListProduct();
-    //             // tat modal
-    //             document.getElementsByClassName("close")[0].click();
-    //         })
-    //         .catch(function(error) {
-    //             console.log(error);
-    //         })
-    // }
+//     // tao ra doi tuong product
+//     var product = new Product(id, tenSP, giaSP, hinhAnh, moTa);
+//     console.log(product);
+//     //gui toi phuowng thuc services de gui product len server
+//     servies.UpdateProductById(product)
+//         .then(function() {
+//             // console.log(result.data);
+//             getListProduct();
+//             // tat modal
+//             document.getElementsByClassName("close")[0].click();
+//         })
+//         .catch(function(error) {
+//             console.log(error);
+//         })
+// }
 
-    // getEle("btnThemSP").addEventListener("click", function() {
-    //     // //  Sua lai tieu de modal
+// getEle("btnThemSP").addEventListener("click", function() {
+//     // //  Sua lai tieu de modal
 
-    //     document.getElementsByClassName("modal-title")[0].innerHTML = "Thêm sản phẩm";
-    //     // // add vo nut button
-    //     var footer = `<button class="btn btn-warning" onclick="addProduct()">Thêm sản phẩm </button>`;
-    //     document.getElementsByClassName("modal-footer")[0].innerHTML = footer;
-    // })
+//     document.getElementsByClassName("modal-title")[0].innerHTML = "Thêm sản phẩm";
+//     // // add vo nut button
+//     var footer = `<button class="btn btn-warning" onclick="addProduct()">Thêm sản phẩm </button>`;
+//     document.getElementsByClassName("modal-footer")[0].innerHTML = footer;
+// })
 
-    // function addProduct() {
-    //     // console.log("hello");
-    //     var tenSP = getEle("TenSP").value;
-    //     var giaSP = getEle("GiaSP").value;
-    //     var hinhAnh = getEle("HinhSP").value;
-    //     var moTa = getEle("MoTa").value;
+// function addProduct() {
+//     // console.log("hello");
+//     var tenSP = getEle("TenSP").value;
+//     var giaSP = getEle("GiaSP").value;
+//     var hinhAnh = getEle("HinhSP").value;
+//     var moTa = getEle("MoTa").value;
 
-    //     var product = new Product("", tenSP, giaSP, hinhAnh, moTa);
-    //     console.log(product);
-    //     servies.addProductApi(product)
-    //         .then(function(result) {
-    //             // console.log(result);
-    //             getListProduct();
-    //             // tat modal
-    //             document.getElementsByClassName("close")[0].click();
-    //         })
-    //         .catch(function(error) {
-    //             console.log(error);
-    //         })
-    // }
+//     var product = new Product("", tenSP, giaSP, hinhAnh, moTa);
+//     console.log(product);
+//     servies.addProductApi(product)
+//         .then(function(result) {
+//             // console.log(result);
+//             getListProduct();
+//             // tat modal
+//             document.getElementsByClassName("close")[0].click();
+//         })
+//         .catch(function(error) {
+//             console.log(error);
+//         })
+// }
 
-    // function getEle(id) {
-    //     return document.getElementById(id);
-    // }
+// function getEle(id) {
+//     return document.getElementById(id);
+// }
 
-    // //product2.png
+// //product2.png
