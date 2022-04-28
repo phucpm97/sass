@@ -1,7 +1,7 @@
 function Services() {
     this.fetchData = function() {
         return axios({
-            url: "https://6256e8756ea703700541c7c3.mockapi.io/api/TenGiaoVien",
+            url: "https://6256e8756ea703700541c7c3.mockapi.io/api/DSGV",
             method: "GET",
         });
     };
@@ -35,3 +35,4 @@ function Services() {
     // };
 
 }
+// https://6256e8756ea703700541c7c3.mockapi.io/api/DSGV

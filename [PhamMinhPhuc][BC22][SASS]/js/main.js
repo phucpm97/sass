@@ -49,18 +49,22 @@ function renderHTML(data) {
     var content = "";
     for (var i = 0; i < data.length; i++) {
         var product = data[i];
-        content += `
-        <div class="teacher_slider">
-            <div class="card teacher_img">
-                <img src="./images/${product.Hinhanh}" class="card-img-top " alt="...">
-            </div>
-                <div class="card-body teacher_text">
-                    <h2 class="teacher_langue">${product.Ngonngu}</h2>
-                    <h3 class="teacher_name">${product.TenGV}</h3>
-                    <p class="teacher_comment">${product.Mota}</p>
+        console.log(product.loaiND);
+        if (product.loaiND == "GV") {
+            content += `
+            <div class="teacher_slider">
+                <div class="card teacher_img">
+                    <img src="./images/${product.hinhAnh}" class="card-img-top " alt="...">
                 </div>
-        </div>
-    `;
+                    <div class="card-body teacher_text">
+                        <h2 class="teacher_langue">${product.ngonNgu}</h2>
+                        <h3 class="teacher_name">${product.hoTen}</h3>
+                        <p class="teacher_comment">${product.moTa}</p>
+                    </div>
+            </div>
+        `;
+        };
+
     }
     document.getElementById("Idteacher").innerHTML = content;
 }
